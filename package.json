@@ -1,0 +1,22 @@
+{
+  "name": "ow-bridge-headless",
+  "version": "0.2.19",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "update": "node src/cli.mjs update",
+    "models": "node src/cli.mjs models",
+    "test:models": "node src/cli.mjs test",
+    "owb": "node src/cli.mjs"
+  },
+  "dependencies": {
+    "tar": "7.5.22",
+    "undici": "^7.30.0"
+  },
+  "description": "OW Bridge headless —— 把 OpenCode 免费模型暴露为 OpenAI 兼容 API 的无 GUI 代理，开箱即用。",
+  "author": "OW Bridge"
+}
